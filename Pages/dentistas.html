@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Libreria BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Link Libreria FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../styles.css">
+    
+    <title>Dentistas</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand"><i class="fa-solid fa-tooth" style="color: white; font-size: 50px;"></i></a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion"> 
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navegacion"> 
+                    <ul class="navbar-nav fw-bold">
+                        <li class="nav-item px-2">
+                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="dentistas.html">Dentistas</a> 
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="especialidades.html">Especialidades</a> 
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="sucursales.html">Sucursales</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ms-auto fw-bold custom-login rounded-3 px-4">
+                    <a class="nav-link fs-5" href="login.html">LogIn</a> 
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Sección NUESTROS DENTISTAS-->
+    <div class="row bg-custom-1 py-5 px-5"> <!-- Contenedor texto dentistas utilizando bootstrap grids, CSS y flexbox -->
+        <div class="col-12 col-md-6  d-flex flex-column justify-content-center py-4"> <!-- Columna para texto con ajuste responsivo para mobile -->
+            <h2 class="text-muted">Nuestros Dentistas</h2> <!-- Título -->
+            <p class="text-muted">Nuestro equipo de dentistas está compuesto por profesionales altamente capacitados con vasta experiencia en odontología. Cada uno se especializa en áreas específicas, como ortodoncia y cirugía oral, para ofrecer una atención dental personalizada y de la más alta calidad. Además de nuestros dentistas de planta, que se presentan a continuación, colaboramos con dentistas externos para brindar una gama más amplia de servicios. Este enfoque permite a nuestros pacientes acceder a especialistas clave para sus tratamientos, siempre con el respaldo y la coordinación de nuestra clínica.<br><br></p> <!-- Descripción -->
+                
+            <table class="table table-hover"> <!-- Tabla dentistas -->
+                <thead class="fw-bold"> <!-- Cabecera -->
+                    <tr>
+                        <th class="text-muted">Nombre</th> <!-- nombres -->
+                        <th class="text-muted">Especialidad</th> <!-- especialidades -->
+                        <th class="text-muted">Formación</th> <!-- formación -->
+                    </tr>
+                </thead>
+                <tbody> <!-- tabla con datos nombre, especialidad y formación -->
+                    <tr>
+                        <td class="text-muted">Carolina Manriquez</td> 
+                        <td class="text-muted">TTM y DOF</td> 
+                        <td class="text-muted">Universidad Andres Bello</td> 
+                    </tr>
+                    <tr>
+                        <td class="text-muted">Alejandro López</td>
+                        <td class="text-muted">Ortodoncia</td>
+                        <td class="text-muted">Universidad de Santiago</td>
+                    </tr>
+                    <tr>
+                        <td class="text-muted">Valentina Morales</td>
+                        <td class="text-muted">Endodoncia</td>
+                        <td class="text-muted">Universidad de Chile</td>
+                    </tr>
+                    <tr>
+                        <td class="text-muted">Roberto Fernández</td>
+                        <td class="text-muted">Periodoncia</td>
+                        <td class="text-muted">Universidad de Concepción</td>
+                    </tr>
+                    <tr>
+                        <td class="text-muted">Isabel González</td>
+                        <td class="text-muted">Implantología</td>
+                        <td class="text-muted">Universidad de Valparaíso</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-12 col-md-6  d-flex flex-column align-items-center justify-content-center"> <!-- Contenedor imagen utilizando bootstrap grids y flexbox -->
+            <img class="img-fluid w-60 rounded-5 p-4" src="/Images/dentistas_pic1.png" alt="dentista_pic1"> <!-- imagen dentistas -->
+        </div>
+    </div>
+
+
+    <footer class="custom-footer text-white"> 
+        <div class="row container-fluid py-4">
+            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-tooth fa-6x"></i>
+                </a>
+            </div>
+            <div class="col-12 col-md-4">
+                <ul class="list-unstyled text-center">
+                    <li><a href="/index.html" class="custom-link rounded-3 px-4 fs-5 text-decoration-none">Inicio</a></li>
+                    <li><a href="dentistas.html" class="custom-link rounded-3 px-4 fs-5 text-decoration-none">Dentistas</a></li>
+                    <li><a href="especialidades.html" class="custom-link rounded-3 px-4 fs-5 text-decoration-none">Especialidades</a></li>
+                    <li><a href="sucursales.html" class="custom-link rounded-3 px-4 fs-5 text-decoration-none">Sucursales</a></li>
+                    <li><a href="login.html" class="custom-link rounded-3 px-4 fs-5 text-decoration-none">Log In</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                <a href="https://www.facebook.com/?locale=es_LA" class="text-white me-2">
+                    <i class="fa-brands fa-facebook-f fa-2x"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="text-white me-2">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+                <a href="https://x.com/home?lang=en" class="text-white me-2">
+                    <i class="fa-brands fa-x-twitter fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

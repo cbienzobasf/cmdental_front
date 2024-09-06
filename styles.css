@@ -1,0 +1,78 @@
+/* styles.css */
+
+/*NavBar*/
+.custom-navbar {
+    background-color: #49AAE4; /*Fondo de la navbar*/
+}
+
+/*Login*/
+.custom-login {
+    background-color: white; /*Fondo Login*/
+    color: #49AAE4; /*Color botón*/
+    transition: background-color 0.3s, color 0.3s; /*Transición*/
+}
+
+/*Interacción LogIn*/
+.custom-login:hover {
+    background-color: #49AAE4; /*Fondo al pasar el mouse*/
+    color: white; /*Color texto al pasar el mouse*/
+    transform: translateY(-5px); /*Efecto de flotación*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra botón*/
+}
+
+/*Links NavBar*/
+.custom-link {
+    color: white; /*Color texto Links*/
+    transition: background-color 0.3s, color 0.3s; /*Transición*/
+}
+
+/*Interacción Links Navbar*/
+.custom-link:hover {
+    background-color: white; /*Fondo al pasar el mouse*/
+    color: #49AAE4; /*Color del texto al pasar el mouse*/
+    transform: translateY(-5px); /*Efecto de flotación*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /*Sombra botón*/
+}
+
+/*Nombre Clínica*/
+.custom-name {
+    color: #49AAE4; /*Color texto*/
+}
+
+/*Footer*/
+.custom-footer {
+    background-color: #49AAE4; /*Fondo Footer*/
+}
+
+/*Color personalizado fondo secciones*/
+.bg-custom-1 {
+    background-color: #f6f8fa; /*Color Fondo*/
+}
+
+/*Google Maps*/
+.map-container {
+    width: 100%; /*ancho disponible*/
+    height: 400px; /* altura fija para el mapa*/
+    position: relative; /*posición relativa para flexibilidad*/
+}
+
+/* iframe Google Maps */
+.map-container iframe {
+    border: 0; /* Elimina borde */
+    width: 100%; /*100% ancho contenedor*/
+    height: 100%; /*100% altura contenedor*/
+}
+
+/* Botonones LogIn*/
+.btn-custom {
+    background-color: #49AAE4; /*Color azul fondo del botón*/
+    color: white; /*Color blanco texto del botón*/
+}
+
+/*Interacción Botón*/
+.btn-custom:hover {
+    background-color: white; /*Fondo del botón al pasar el mouse*/
+    color: #49AAE4; /*Color texto alpasar el mouse*/
+    transform: translateY(-5px); /*Efecto de flotación*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /*Sombra*/
+}
