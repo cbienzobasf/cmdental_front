@@ -1,5 +1,4 @@
 /* styles.css */
-
 /*NavBar*/
 .custom-navbar {
     background-color: #49AAE4; /*Fondo de la navbar*/
@@ -76,3 +75,9 @@
     transform: translateY(-5px); /*Efecto de flotación*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /*Sombra*/
 }
+
+
+/* Personalización clase row bootstrap para reducir a 0 espacio horizontal entre lass columnas */
+.row {
+        --bs-gutter-x: 0;
+    }
