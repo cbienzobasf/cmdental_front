@@ -12,7 +12,11 @@ Proyecto realizado por **Carlos Bienzobas** como parte de curso Desarrollo Web, 
 
 Este proyecto consiste en la construcción de un sitio web para un centro odontologico ficticio llamado "CMDental", ubicado en Santiago de Chile. El sitio está diseñado para proporcionar información a los usuarios sobre dentistas, especialidades y sucursales. 
 
-El sitio está desarrollado utilizando **HTML5**, **CSS**, y **Bootstrap 5**.
+El sitio está desarrollado utilizando **HTML5**, **CSS**, y **Bootstrap 5**, donde a diferencia de la entrega anterior (pre-entrega 01), se migra la mayoria del estilo de la página web hacia las clases base de bootstrap, con puntuales modificaciones por medio de personalización en CSS.
+
+Nota: Es importante señalar, que la metodologia principal seguida para la gestión de estilos es kebab-case o dash-case, la cual es utilizada por bootstrap.
+
+El proyecto se basa en  Bootstrap Grid y Flexbox para gestionar el layout responsivo y la alineación de su contenido, apuntando a  la simplicidad y reutilización de las clases predefinidas.
 
 ## Estructura
 
