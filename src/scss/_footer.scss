@@ -1,0 +1,12 @@
+// Footer
+.custom-footer {
+    background-color: $primary-color;
+  }
+
+.image-zoom {
+    transition: transform 0.3s ease-in-out; // Duración y efecto de la transición
+}
+
+.image-zoom:hover {
+    transform: scale(1.25); // Aumenta la imagen a un 125%
+}
