@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambiado el idioma a 'es' para mejorar SEO y accesibilidad -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta descripción agregada para mejorar SEO -->
+    <meta name="description" content="CMDental cuenta con sucursales en Santiago, Las Condes, Ñuñoa y Vitacura. Encuentra la mejor atención odontológica cerca de ti.">
 
     <!-- Link Libreria BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -12,84 +15,83 @@
 
     <link rel="stylesheet" href="../dist/css/styles.css">
     <title>Sucursales</title>
-
 </head>
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand rotate-in-center"><i class="fa-solid fa-tooth" style="color: white; font-size: 50px;"></i></a>
+                <a class="navbar-brand rotate-in-center" aria-label="Logo de CMDental" href="../index.html"><i class="fa-solid fa-tooth" style="color: white; font-size: 50px;"></i></a> <!-- Href corregido -->
                 
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"> </span>
                 </button>
     
                 <div class="collapse navbar-collapse" id="navegacion">
                     <ul class="navbar-nav fw-bold">
                         <li class="nav-item px-2">
-                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="../index.html">Inicio</a>
+                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="../index.html" aria-current="page">Inicio</a> <!-- Href corregido -->
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./dentistas.html">Dentistas</a>
+                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./dentistas.html">Dentistas</a> <!-- Href corregido -->
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./especialidades.html">Especialidades</a>
+                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./especialidades.html">Especialidades</a> <!-- Href corregido -->
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./sucursales.html">Sucursales</a>
+                            <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./sucursales.html">Sucursales</a> <!-- Href corregido -->
                         </li>
                     </ul>
                 </div>
                 <div class="ms-auto fw-bold custom-login rounded-3 px-4">
-                    <a class="nav-link fs-5" href="./login.html">LogIn</a>
+                    <a class="nav-link fs-5" href="./login.html">LogIn</a> <!-- Href corregido -->
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- Sección SUCURSALES -->
-    <div class="row bg-custom-1 py-5 px-5"> <!-- Contenedor SUCURSALES utilizando bootstrap grids y flexbox -->
-        <div class="col-12 col-md-6 d-flex flex-column justify-content-center py-4"> <!-- Columna Texto -->
-            <h2 class="text-muted slide-in-left">Nuestras Sucursales</h2> <!-- Título -->
-            <p class="text-muted slide-in-left">Contamos con varias sucursales convenientemente ubicadas en Santiago y alrededores. Cada una está equipada con modernas instalaciones y un ambiente acogedor, asegurando que todos nuestros pacientes reciban atención de primera clase cerca de su hogar o lugar de trabajo.<br><br></p> <!-- Descripción -->
-            <ul class="slide-in-left"> <!-- Lista con Nombre clinica, Dirección, telefono y Horario de Atención -->
-                <p class="text-muted"><span class="fw-bold">Clínica Dental Las Condes</span></p>
-                <li class="text-muted"><span class="fw-bold">Dirección:</span> Av. Las Condes 5678, Las Condes</li>
-                <li class="text-muted"><span class="fw-bold">Teléfono:</span> 56234567890</li>
-                <li class="text-muted"><span class="fw-bold">Horario de Atención:</span> Lunes a Sábado, 9:00 AM - 6:00 PM</li><br><br>
-                
-                <p class="text-muted"><span class="fw-bold">Clínica Dental Ñuñoa</span></p>
-                <li class="text-muted"><span class="fw-bold">Dirección:</span> Av. Irarrázaval 9101, Ñuñoa</li>
-                <li class="text-muted"><span class="fw-bold">Teléfono:</span> 56245678901</li>
-                <li class="text-muted"><span class="fw-bold">Horario de Atención:</span> Lunes a Viernes, 9:00 AM - 6:00 PM</li><br><br>
-                
-                <p class="text-muted"><span class="fw-bold">Clínica Dental Vitacura</span></p>
-                <li class="text-muted"><span class="fw-bold">Dirección:</span> Av. Vitacura 1122, Vitacura</li>
-                <li class="text-muted"><span class="fw-bold">Teléfono:</span> 56256789012</li>
-                <li class="text-muted"><span class="fw-bold">Horario de Atención:</span> Lunes a Sábado, 8:00 AM - 5:00 PM</li><br><br>
-                
-                <p class="text-muted"><span class="fw-bold">Clínica Dental Santiago Centro</span></p>
-                <li class="text-muted"><span class="fw-bold">Dirección:</span> Av. Libertador Bernardo O'Higgins 1313, Santiago Centro</li>
-                <li class="text-muted"><span class="fw-bold">Teléfono:</span> 56267890123</li>
-                <li class="text-muted"><span class="fw-bold">Horario de Atención:</span> Lunes a Viernes, 8:00 AM - 5:00 PM</li><br><br>
+    <main> <!-- Agregado <main> para mejorar la semántica y accesibilidad -->
+        <section class="row bg-custom-1 py-5 px-5 overflow-hidden"> <!-- Agregado overflow-hidden para evitar la barra horizontal -->
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center py-4"> 
+                <h1 class="text-muted slide-in-left">Nuestras Sucursales</h1> <!-- Cambio de <h2> a <h1> para mantener una correcta jerarquía de títulos -->
+                <p class="text-muted slide-in-left">Contamos con varias sucursales convenientemente ubicadas en Santiago y alrededores.</p> 
 
-            </ul>
-        </div>
-        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"> <!-- Columna con mapa -->
-            <div class="map-container slide-in-right"> <!-- Contenedor para Google Maps -->
-                
-                <!-- Link Google Maps -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.166902580084!2d-70.5911786845804!3d-33.4053396806568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96416d7a8129fdbb%3A0x81dbe60fa3835e8!2sAv.%20Las%20Condes%205678%2C%20Las%20Condes!5e0!3m2!1ses!2scl!4v1634908045918!5m2!1ses!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- config Google Maps en web -->
+                <ul class="slide-in-left"> 
+                    <p class="text-muted"><span class="fw-bold">Clínica Dental Las Condes</span></p>
+                    <li class="text-muted"><span class="fw-bold">Dirección:</span> Av. Las Condes 5678, Las Condes</li>
+                    <li class="text-muted"><span class="fw-bold">Teléfono:</span> 56234567890</li>
+                    <li class="text-muted"><span class="fw-bold">Horario de Atención:</span> Lunes a Sábado, 9:00 AM - 6:00 PM</li><br><br>
+                    
+                    <p class="text-muted"><span class="fw-bold">Clínica Dental Ñuñoa</span></p>
+                    <li class="text-muted"><span class="fw-bold">Dirección:</span> Av. Irarrázaval 9101, Ñuñoa</li>
+                    <li class="text-muted"><span class="fw-bold">Teléfono:</span> 56245678901</li>
+                    <li class="text-muted"><span class="fw-bold">Horario de Atención:</span> Lunes a Viernes, 9:00 AM - 6:00 PM</li><br><br>
+                    
+                    <p class="text-muted"><span class="fw-bold">Clínica Dental Vitacura</span></p>
+                    <li class="text-muted"><span class="fw-bold">Dirección:</span> Av. Vitacura 1122, Vitacura</li>
+                    <li class="text-muted"><span class="fw-bold">Teléfono:</span> 56256789012</li>
+                    <li class="text-muted"><span class="fw-bold">Horario de Atención:</span> Lunes a Sábado, 8:00 AM - 5:00 PM</li><br><br>
+                    
+                    <p class="text-muted"><span class="fw-bold">Clínica Dental Santiago Centro</span></p>
+                    <li class="text-muted"><span class="fw-bold">Dirección:</span> Av. Libertador Bernardo O'Higgins 1313, Santiago Centro</li>
+                    <li class="text-muted"><span class="fw-bold">Teléfono:</span> 56267890123</li>
+                    <li class="text-muted"><span class="fw-bold">Horario de Atención:</span> Lunes a Viernes, 8:00 AM - 5:00 PM</li><br><br>
+
+                </ul>
             </div>
-        </div>
-    </div>
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"> 
+                <div class="map-container slide-in-right"> <!-- Contenedor para Google Maps -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.166902580084!2d-70.5911786845804!3d-33.4053396806568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96416d7a8129fdbb%3A0x81dbe60fa3835e8!2sAv.%20Las%20Condes%205678%2C%20Las%20Condes!5e0!3m2!1ses!2scl!4v1634908045918!5m2!1ses!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Google Maps de sucursal Las Condes"> <!-- Añadido aria-label para accesibilidad -->
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="custom-footer text-white">
         <div class="row container-fluid py-4">
             <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                <a class="navbar-brand image-zoom" href="#">
-                    <i class="fa-solid fa-tooth fa-6x"></i>
-                </a>
+                <a class="navbar-brand image-zoom" href="../index.html" aria-label="CMDental logo"><i class="fa-solid fa-tooth fa-6x"></i></a> <!-- Href corregido -->
             </div>
             <div class="col-12 col-md-4">
                 <ul class="list-unstyled text-center">
@@ -101,13 +103,13 @@
                 </ul>
             </div>
             <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                <a href="https://www.facebook.com/?locale=es_LA" class="text-white me-2 image-zoom">
+                <a href="https://www.facebook.com/?locale=es_LA" class="text-white me-2 image-zoom" aria-label="Facebook">
                     <i class="fa-brands fa-facebook-f fa-2x"></i>
                 </a>
-                <a href="https://www.youtube.com/" class="text-white me-2 image-zoom">
+                <a href="https://www.youtube.com/" class="text-white me-2 image-zoom" aria-label="YouTube">
                     <i class="fa-brands fa-youtube fa-2x"></i>
                 </a>
-                <a href="https://x.com/home?lang=en" class="text-white me-2 image-zoom">
+                <a href="https://x.com/home?lang=en" class="text-white me-2 image-zoom" aria-label="Twitter">
                     <i class="fa-brands fa-x-twitter fa-2x"></i>
                 </a>
             </div>

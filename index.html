@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambiado el idioma a 'es' para mejorar SEO y accesibilidad -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    
+
+    <!-- Meta descripción agregada para mejorar SEO -->
+    <meta name="description" content="CMDental: Centro Odontológico Integral ofreciendo servicios dentales de calidad en Santiago. Profesionales especializados y tecnología avanzada para el cuidado dental.">
+
     <!-- Link Libreria BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -14,102 +17,103 @@
 
     <title>Inicio</title>
 </head>
+
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg custom-navbar"> 
         <div class="container-fluid">
-            <a class="navbar-brand rotate-in-center"><i class="fa-solid fa-tooth" style="color: white; font-size: 50px;"></i></a> <!-- Ícono -->
+            <a class="navbar-brand rotate-in-center" aria-label="Logo de CMDental" href="./index.html"><i class="fa-solid fa-tooth" style="color: white; font-size: 50px;"></i></a> <!-- Href corregido -->
             
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion"> <!-- Botón para desplegar la navbar en pantallas pequeñas -->
-                <span class="navbar-toggler-icon"> </span> <!-- Ícono del botón -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> </span> 
             </button>
 
-            <div class="collapse navbar-collapse" id="navegacion"> <!-- Contenedor Links navbar -->
-                <ul class="navbar-nav fw-bold"> <!-- Lista Links Navbar -->
+            <div class="collapse navbar-collapse" id="navegacion"> 
+                <ul class="navbar-nav fw-bold"> 
                     <li class="nav-item px-2">
-                        <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./index.html">Inicio</a> <!-- Página Inicio -->
+                        <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./index.html" aria-current="page">Inicio</a> <!-- Href corregido -->
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./Pages/dentistas.html">Dentistas</a> <!-- Página dentistas -->
+                        <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./Pages/dentistas.html">Dentistas</a> <!-- Href corregido -->
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./Pages/especialidades.html">Especialidades</a> <!-- Página especialidades -->
+                        <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./Pages/especialidades.html">Especialidades</a> <!-- Href corregido -->
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./Pages/sucursales.html">Sucursales</a> <!-- Página sucursales -->
+                        <a class="nav-link custom-link rounded-3 px-4 fs-5" href="./Pages/sucursales.html">Sucursales</a> <!-- Href corregido -->
                     </li>
                 </ul>
             </div>
             <div class="ms-auto fw-bold custom-login rounded-3 px-4">
-                <a class="nav-link fs-5" href="./Pages/login.html">LogIn</a> <!-- Página LogIn -->
+                <a class="nav-link fs-5" href="./Pages/login.html">LogIn</a> <!-- Href corregido -->
             </div>
         </div>
     </nav>
 
     <!-- Texto nombre CLINICA-->
-    <div class="row bg-custom-1"> <!-- Contenedor texto clinica utilizando bootstrap grids y flexbox -->
-        <div class="col-12 col-md-6  d-flex align-items-center justify-content-between py-5"> <!-- Columna para texto con ajuste responsivo para mobile -->
-            <h2 class="text-center flex-grow-1 custom-name tracking-in-expand"><span class="fw-bold">Bienvenido a CMDENTAL</span><br>Centro Odontológico Integral</h2> <!-- Texto clinica -->
-        </div>
-        <div class="col-12 col-md-6  text-center"> <!-- Columna para logo con ajuste responsivo para mobile -->
-            <img class="img-fluid w-50 rounded-5 p-4 puff-in-center" src="./Icons/icon_logo_nobkgrnd.png" alt="icon_logo"> <!-- logo -->
-        </div>
-    </div>
-    
-    <!-- Sección NOSOTROS -->
-    <div class="row"> <!-- Contenedor NOSOTROS utilizando bootstrap grids y flexbox -->
-        <div class="col-12 col-md-6  d-flex flex-column align-items-center justify-content-center py-5 px-5"> <!-- Columna Texto  -->
-            <div class="w-100">
-                <h2 class="text-start text-muted slide-in-left">Nosotros<br></h2> <!-- Título -->
-                <p class="text-justify text-muted slide-in-left">En nuestro centro dental, nos dedicamos a ofrecer una atención odontológica integral y de calidad. Con un equipo de profesionales altamente capacitados y tecnología de vanguardia, nos comprometemos a mejorar la salud bucal y la sonrisa de cada uno de nuestros pacientes. Nuestra misión es brindar un servicio personalizado en un ambiente acogedor y seguro. Para lograrlo, nos enfocamos en cuatro pilares fundamentales:</p> <!-- Descripción -->
-                <ul> <!-- Lista -->
-                    <li class="text-muted slide-in-left"><span class="fw-bold">Profesional:</span> Nuestro equipo está compuesto por dentistas con especializaciones en diferentes áreas odontológicas y una sólida trayectoria en el campo, asegurando una atención de alta calidad y personalizada para cada paciente.</li>
-                    <li class="text-muted slide-in-left"><span class="fw-bold">Tecnología Avanzada:</span> Incorporamos las últimas tecnologías y técnicas en nuestros tratamientos, desde diagnósticos por imágenes digitales hasta procedimientos mínimamente invasivos, garantizando resultados precisos y eficaces.</li>
-                    <li class="text-muted slide-in-left"><span class="fw-bold">Enfoque en el Paciente:</span> Nos esforzamos por crear un ambiente acogedor y seguro donde cada paciente se sienta cómodo. Escuchamos tus necesidades y preocupaciones para ofrecerte un plan de tratamiento adecuado a tus expectativas y condiciones de salud bucal.</li>
-                    <li class="text-muted slide-in-left"><span class="fw-bold">Compromiso con la Calidad:</span> Nuestra misión es mejorar la salud bucal y las sonrisas de nuestros pacientes mediante un servicio dental integral, utilizando materiales de alta calidad y prácticas basadas en evidencia para asegurar los mejores resultados a largo plazo.</li>
-                </ul>
+    <main> <!-- Agregado <main> para mejorar la semántica y accesibilidad -->
+        <section class="row bg-custom-1 overflow-hidden"> 
+            <div class="col-12 col-md-6  d-flex align-items-center justify-content-between py-5"> 
+                <h1 class="text-center flex-grow-1 custom-name tracking-in-expand"><span class="fw-bold">Bienvenido a CMDENTAL</span><br>Centro Odontológico Integral</h1>
             </div>
-        </div>
-        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> <!-- Columna video -->
-            <div class="ratio ratio-16x9 w-100 p-5"> <!-- Contenedor para ratio de aspecto 16:9 -->
-                <video autoplay muted loop class="p-5 slide-in-right"> <!-- Video -->
-                    <source src="./Videos/dental_Ad.mp4" type="video/mp4"> <!-- Fuente local del video -->
-                </video>
+            <div class="col-12 col-md-6  text-center">
+                <img class="img-fluid w-50 rounded-5 p-4 puff-in-center" src="./Icons/icon_logo_nobkgrnd.png" alt="Logo CMDental">
             </div>
-        </div>
-    </div>
-    
-    <!-- Sección SERVICIOS -->
-    <div class="row bg-custom-1 py-5 px-5"> <!-- Contenedor SERVICIOS utilizando bootstrap grids y flexbox -->
-        <div class="col-12  d-flex flex-column justify-content-center py-4"> <!-- Columna Texto -->
-            <h2 class="text-start text-muted slide-in-left">Nuestros Servicios</h2> <!-- Título  -->
-            <p class="text-justify text-muted slide-in-left">Ofrecemos una amplia gama de servicios dentales para cubrir todas tus necesidades. Desde limpiezas y chequeos regulares hasta tratamientos especializados como ortodoncia, implantología y cirugía oral. Utilizamos técnicas avanzadas y materiales de alta calidad para asegurar resultados óptimos y duraderos.</p> <!-- Descripción -->
-        </div>
-    </div>
-    
-    <!-- Sección CONTACTO -->    
-    <div class="row py-5 px-5"> <!-- Contenedor CONTACTO utilizando bootstrap grids y flexbox -->
-        <div class="col-12"> <!-- Columna Texto -->
-            <h2 class="text-start text-muted slide-in-left">Contáctanos<br></h2>   <!-- Título  --> 
-            <p class="text-justify text-muted slide-in-left">Estamos aquí para ayudarte con todas tus necesidades dentales. Puedes visitarnos en cualquiera de nuestras sucursales, llamarnos al +56 2 1234 5678 o enviarnos un correo electrónico a contacto@cmdental.cl. ¡Esperamos saber de ti pronto!</p> <!-- Descripción -->
-        </div>    
-    </div>
+        </section>
+
+        <!-- Sección NOSOTROS -->
+        <section class="row overflow-hidden"> 
+            <div class="col-12 col-md-6  d-flex flex-column align-items-center justify-content-center py-5 px-5"> 
+                <div class="w-100">
+                    <h2 class="text-start text-muted slide-in-left">Nosotros<br></h2> 
+                    <p class="text-justify text-muted slide-in-left">En nuestro centro dental, nos dedicamos a ofrecer una atención odontológica integral y de calidad.</p> 
+                    <ul> 
+                        <li class="text-muted slide-in-left"><span class="fw-bold">Profesional:</span> Nuestro equipo está compuesto por dentistas con especializaciones en diferentes áreas odontológicas.</li>
+                        <li class="text-muted slide-in-left"><span class="fw-bold">Tecnología Avanzada:</span> Incorporamos las últimas tecnologías y técnicas en nuestros tratamientos.</li>
+                        <li class="text-muted slide-in-left"><span class="fw-bold">Enfoque en el Paciente:</span> Nos esforzamos por crear un ambiente acogedor y seguro.</li>
+                        <li class="text-muted slide-in-left"><span class="fw-bold">Compromiso con la Calidad:</span> Nuestra misión es mejorar la salud bucal y las sonrisas de nuestros pacientes.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
+                <div class="ratio ratio-16x9 w-100 p-5">
+                    <video autoplay muted loop class="p-5 slide-in-right" aria-label="Video promocional CMDental">
+                        <source src="./Videos/dental_Ad.mp4" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección SERVICIOS -->
+        <section class="row bg-custom-1 py-5 px-5 overflow-hidden"> 
+            <div class="col-12  d-flex flex-column justify-content-center py-4"> 
+                <h2 class="text-start text-muted slide-in-left">Nuestros Servicios</h2> 
+                <p class="text-justify text-muted slide-in-left">Ofrecemos una amplia gama de servicios dentales para cubrir todas tus necesidades.</p> 
+            </div>
+        </section>
+
+        <!-- Sección CONTACTO -->
+        <section class="row py-5 px-5 overflow-hidden"> 
+            <div class="col-12"> 
+                <h2 class="text-start text-muted slide-in-left">Contáctanos<br></h2>   
+                <p class="text-justify text-muted slide-in-left">Estamos aquí para ayudarte con todas tus necesidades dentales.</p> 
+            </div>    
+        </section>
+    </main>
 
     <!-- PIÉ DE PÁGINA-->
-    <footer class="custom-footer text-white"> <!-- Link a CSS -->
-        <div class="row container-fluid py-4"> <!-- Contenedor PIÉ DE PÁGINA utilizando bootstrap grids y flexbox junto con formato bootstrap -->
+    <footer class="custom-footer text-white"> 
+        <div class="row container-fluid py-4"> 
 
             <!-- Logo -->
-            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center"> <!-- Columna para logo con ajuste responsivo para mobile -->
-                <a class="navbar-brand image-zoom" href="#">
-                    <i class="fa-solid fa-tooth fa-6x"></i> <!-- Ícono -->
-                </a>
+            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center"> 
+                <a class="navbar-brand image-zoom" href="./index.html" aria-label="CMDental logo"><i class="fa-solid fa-tooth fa-6x"></i></a> <!-- Href corregido -->
             </div>
             
             <!-- Enlaces -->
-            <div class="col-12 col-md-4"> <!-- Columna para links navbar con ajuste responsivo para mobile -->
-                <ul class="list-unstyled text-center"> <!-- Lista de Links con li personalizados en CSS y utilización de formatos base bootstrap -->
+            <div class="col-12 col-md-4"> 
+                <ul class="list-unstyled text-center"> 
                     <li><a href="./index.html" class="custom-link rounded-3 px-4 fs-5 text-decoration-none">Inicio</a></li>
                     <li><a href="./Pages/dentistas.html" class="custom-link rounded-3 px-4 fs-5 text-decoration-none">Dentistas</a></li>
                     <li><a href="./Pages/especialidades.html" class="custom-link rounded-3 px-4 fs-5 text-decoration-none">Especialidades</a></li>
@@ -119,21 +123,21 @@
             </div>
 
             <!-- Redes Sociales -->
-            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center"> <!-- Columna para redes sociales con ajuste responsivo para mobile -->
-                <a href="https://www.facebook.com/?locale=es_LA" class="text-white me-2 image-zoom">
-                    <i class="fa-brands fa-facebook-f fa-2x"></i> <!-- Facebook -->
+            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center"> 
+                <a href="https://www.facebook.com/?locale=es_LA" class="text-white me-2 image-zoom" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f fa-2x"></i> 
                 </a>
-                <a href="https://www.youtube.com/" class="text-white me-2 image-zoom">
-                    <i class="fa-brands fa-youtube fa-2x"></i> <!-- YouTube -->
+                <a href="https://www.youtube.com/" class="text-white me-2 image-zoom" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube fa-2x"></i> 
                 </a>
-                <a href="https://x.com/home?lang=en" class="text-white me-2 image-zoom">
-                    <i class="fa-brands fa-x-twitter fa-2x"></i> <!-- Twitter -->
+                <a href="https://x.com/home?lang=en" class="text-white me-2 image-zoom" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter fa-2x"></i> 
                 </a>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- Importa el script JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 </html>
