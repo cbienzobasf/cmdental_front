@@ -1,0 +1,233 @@
+
+/* ESTILOS PAGINA WEB GENERAL */
+*{/* Aplica a todos los elementos de la página */
+    padding: 0;/* 0 relleno inicial*/
+    margin: 0;/* 0 margen inicial */
+    box-sizing: border-box;/* modo para contemplar padding y borde en heigth y weight */
+    text-decoration: none;/* sin efectos como decorativos como hipervinculo */
+    font-family: "Open Sans"; /* fuente de texto base */
+}
+
+/* ESTILOS BODY */
+body{
+    background-color: white; /* fondo blanco */
+    width: 1920px ; /* ancho página*/
+    height: 100vh;/* parametro para mantener altura directamente en relación con la altura del viewport*/
+}
+
+/* ESTILOS HEADER */
+#header {
+    max-width: 100%;/* max ancho header , sujeto a padre body */
+    height: 100px;/* altura header definida 100px*/
+    background-color: #49AAE4;/* color header definido #49AAE4 */    
+}
+#navBar {
+    width: 100%; /* ancho navBar 100%  padre header */
+    height: 100%;/* alto navBar 100% a padre header */
+    padding: 0 50px;/* relleno lateral 50px ambos lados */
+    display: flex; /* Utilización FLEXBOX*/
+    justify-content: space-between; /* Alineación Horizontal*/
+    align-items: center; /* Alineación Vertical*/  
+}
+#navBar ul li {
+    display: inline-block; /* Modo Visualización*/
+    font-size: 20px;/* Tamaño texto*/
+    font-weight: bold; /* Peso fuente "negrita" */
+    margin-right: 20px; /* Margen derecho +20px*/
+}
+#navBar ul li a{
+    color: white;/* Color texto Blanco*/
+}
+.login a {
+    background-color: #4285F4; /* Color de fondo caja  */
+    border-radius: 25px; /* Bordes ovalados */
+    padding: 6px 40px; /* tamaño/relleno caja */
+    color: white; /* Color del texto */
+}
+.tooth {
+    color: white; /* Color icono web*/
+    font-size: 50px; /* tamaño icono web*/
+}
+
+/* ESTILOS MAIN */
+#main {
+    color: #798DA3; /* color texto contenido en MAIN */
+    font-size: 18px;/* Tamaño principal*/
+    padding: 2% 2%; ;/* contorno/relleno sutil 2%*/
+    text-align: center;/* Alineamiento general centrado*/
+    min-height: 100vh;/* visualización minima main del 100% del viewport */
+}
+
+.bold {
+    font-weight: bold; /* clase config de span */
+}
+
+/* ESTILOS MAIN ==> CMDENTAL */
+.cmdental {
+    display: flex; /* Utilización FLEXBOX*/
+    justify-content: space-between; /* Distribución horizontal entre hijos CMDENTAL*/
+    align-items: center;/* ALineado vertical*/
+}
+
+.cmdental_text {
+    margin-left: 150px; /* separación del borde izquierdo 150px */
+}
+
+.cmdental_text h2 {
+    color: #3B4754;/* color titulos h2*/
+    font-size: 42px; /* tamaño texto titulos h2*/
+    font-weight: bold;/* Peso fuente "negrita" */    
+}
+
+.cmdental_text p {
+    color: #798DA3;/* color parrafos p*/
+    font-size: 24px; /* tamaño texto parrafos p*/
+}
+
+.cmdental_img {
+    margin-right: 150px; /* separación del borde derecho 150px*/
+}
+
+/* ESTILOS MAIN ==> NOSOTROS & DENTISTAS & ESPECIALIDADES & SUCURSALES & LOGIN */
+
+.nosotros , .nuestros_dentistas , .nuestras_especialidades , .nuestras_sucursales {
+    display: flex;  /* Utilización FLEXBOX*/
+    justify-content: space-between; /* Distribución horizontal entre hijos clases*/
+    align-items: center; /* ALineado vertical*/
+}
+
+.login2 {
+    display: flex; /* Utilización FLEXBOX*/
+    margin-top: 20%; /* Margen desde arriba 20% */
+    justify-content: center; /* ALineado horizontal*/
+}
+
+.login2_form_text label{
+    font-size: 25px; /* tamaño letra texto formulario */
+}
+.login2_form_button button {
+    background-color: #4285F4; /* Color de fondo caja  */
+    border-radius: 25px; /* Bordes ovalados */
+    padding: 6px 40px; /* tamaño caja */
+    margin: 10px; /* espacio/margen  entre botones 10px*/ 
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño texto botones 20px */
+}
+
+.nosotros_text h2 , .nuestros_dentistas_text  h2, .nuestras_especialidades_text h2 , .nuestras_sucursales_text h2, .nuestros_servicios_text h2 , .contactenos_text h2 {
+    font-size: 38px; /* tamaño texto titulos*/
+    text-align: left;/* alineado izquierda*/
+    margin-bottom: 20px;/* margen inferior 20px*/
+}
+
+.login2_form h2 {
+    font-size: 38px; /* tamaño texto titulo*/
+    text-align: center; /* centrado*/
+    margin-bottom: 20px; /* margen inferior 20px*/
+}
+
+
+.nosotros_text p , .nuestros_dentistas_text p , .nuestras_especialidades_text p , .nuestras_sucursales_text p {
+    text-align: justify;/* texto parrafos justificado*/
+    width: 80%; /* utilización 80% ancho de asignación Padre */
+    font-size: 20px; /* tamaño texto parrafo*/
+}
+
+.nuestros_servicios_text p , .contactenos_text p  {
+    text-align: justify; /* texto justificado */
+    width: 100%; /* 100% utilización espacio padre */
+    margin-bottom: 100px; /* margen/distancia inferior 100px */
+}
+
+
+.nosotros_text  ul , .nuestras_especialidades_text ul , .nuestras_sucursales_text ul {
+    list-style-type: disc; /* Formato clasico bulletscirculares */
+    margin-left: 50px; /* indentación */
+    margin-bottom: 100px; /* margen/ distancia fondo lista 100px */
+    text-align: left; /* lista alineada izquierda */
+    width: 70%; /* 70% uso espacio padre */      
+}
+
+.nosotros_text ul li , .nuestras_sucursales_text ul li {
+    margin-bottom: 10px; /* Distancia entre bullets */
+}
+
+.nuestras_especialidades_text ul li {
+    margin-bottom: 20px; /* Distancia entre bullets */
+}
+
+.nosotros_img img {
+    width: 200px; /*ancho imagen*/
+    height: auto;/*alto automatico para no perder proporción*/
+    margin-right: 220px; /*margen/distancia borde derecho*/
+}
+
+.nuestros_dentistas img {
+    width: 500px; /*ancho imagen*/
+    height: auto; /*alto automatico para no perder proporción*/
+    margin-right: 220px; /*margen/distancia borde derecho*/
+}
+
+.nuestras_sucursales img {
+    width: 500px; /*ancho imagen*/
+    height: auto; /*alto automatico para no perder proporción*/
+    margin-right: 220px; /*margen/distancia borde derecho*/
+}
+
+.nuestros_dentistas_tabla1 {
+	width: 623px; /*ancho tabla*/
+	height: 210px;/*alto tabla*/
+	border-color:  #49AAE4; /* color contorno tabla */
+	border-width: 4px; /*Ancho borde tabla*/
+	border-style: solid;/*tipo de linea solido*/
+    margin: 20px 0 20px 80px; /* margen/contornos tabla */
+}
+
+.nuestros_dentistas_tabla1 th {
+
+    border-color:  #49AAE4; /* color lineas internas tabla */
+    border-width: 4px; /* grosor/ancho linea */
+	border-style: solid; /*tipo de linea solido*/
+}
+
+/* ESTILOS FOOTER*/
+
+#footer {
+    margin-top: auto; /* auto ajuste footer*/
+    background-color: #49AAE4; /* color footer*/
+    display: flex; /* Utilización FLEXBOX*/
+    align-items: center;/* Alineado vertical hijos*/
+    justify-content: space-between; /* Distribución horizontal entre hijos*/
+    width: 100%;/* 100% ancho pagina*/
+    height: 150px;/* altura footer 150px*/
+}
+
+.tooth2 {
+    font-size: 50px; /* tamaño Icono tooth footer*/
+    color:white;/* color Icono tooth footer*/
+    padding: 5px; /* relleno caja Icono tooth footer*/
+    margin-left: 20px; /* distancia borde izquierdo Icono tooth footer*/
+}
+
+.footer_links ul {
+    list-style: none;/* Sin punto en diseño bullet */
+}
+
+.footer_links li {
+    margin-bottom: 5px; /* Distancia entre bullets 5px */
+}
+
+.footer_links li a {
+    font-size: 16px;/* tamaño redes bullets*/
+    font-weight: bold;/* Peso fuente "negrita" */
+    color: white;/* color bullets*/ 
+}
+
+.footer_redes a {
+    color:white; /* Color iconos Redes Sociales*/
+    font-size: 30px;/* tamaño redes sociales*/
+    padding: 5px; /* Relleno 5px */
+    margin-right: 20px; /* Distancia borde derecho 20px*/
+}
+
+
